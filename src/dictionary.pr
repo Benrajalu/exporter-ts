@@ -1,0 +1,18 @@
+const dictionary = [
+{[ for token in ds.tokensByType("Color") ]}{[ inject "rendered-dictionnary-entry" context token /]}{[/]}
+
+{[ for token in ds.tokensByType("Gradient") ]}{[ inject "rendered-dictionnary-entry" context token /]}{[/]}
+
+{[ for token in ds.tokensByType("Measure") ]}{[ inject "rendered-dictionnary-entry" context token /]}{[/]}
+
+{[ for token in ds.tokensByType("Shadow") ]}{[ inject "rendered-dictionnary-entry" context token /]}{[/]}
+
+{[ const allTokens = ds.tokensByType("Typography") /]}{[ for token in allTokens ]}{[ if !token.referencedToken ]}{[ inject "rendered-dictionnary-entry" context token /]}{[/]}{[/]}
+
+{[ for token in ds.tokensByType("Radius") ]}{[ inject "rendered-dictionnary-entry" context token /]}{[/]}
+
+{[ for token in ds.tokensByType("Text") ]}{[ inject "rendered-dictionnary-entry" context token /]}{[/]}
+
+];
+
+export default dictionary;

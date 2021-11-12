@@ -1,0 +1,12 @@
+{
+    "blueprints": [
+        {
+            "invoke": "allTokens.pr",
+            "write_to": "index.ts"
+        },
+        {
+            "invoke": "dictionary.pr",
+            "write_to": "dictionary.ts"
+        }
+    ]
+}
