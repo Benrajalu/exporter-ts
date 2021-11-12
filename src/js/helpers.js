@@ -141,3 +141,25 @@ Pulsar.registerFunction("logKeys", function (object) {
     console.log(entry);
   }
 });
+
+Pulsar.registerFunction(
+  "parseTokenType",
+  function (token) {
+    if(token.tokenType === "Text") {
+      const typeFromName = token.name.split('/')[0];
+      
+      return typeFromName;
+    }
+
+    return `${token.tokenType.toLowerCase()}`;
+  }
+);
+
+Pulsar.registerFunction("baseWrap", function (token) {
+  const stringPrefix = token.split(':')[0];
+  if(stringPrefix === 'data') {
+    return `url("${token}")`;
+  }
+
+  return token;
+});
