@@ -37,5 +37,5 @@ Rendered as:
 {[ case "Text" ]}{[ prefix = behavior.textTokenPrefix /]}  
 {[ default ]}{[ prefix = "" /]}  
 {[/]}
-{[ let tokenName = readableVariableName(context, tokenGroup, prefix) /]}
+{[ let tokenName = readableVariableKhebabName(context, tokenGroup, prefix) /]}
 {{ tokenName }}
