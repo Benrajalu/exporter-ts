@@ -14,7 +14,7 @@ function getReadableVariableNameByCaseStyle(caseStyle) {
     // Create "sentence" separated by spaces so we can camelcase it all
     let sentence = segments.join(" ");
 
-    // camelcase string from all segments
+    // transform string from all segments with the right case pattern
     sentence = sentence.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => {
       switch (caseStyle) {
         case "khebab":
