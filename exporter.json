@@ -1,11 +1,13 @@
 {
-    "id": "io.supernova.scss",
+    "id": "io.supernova.ts",
     "name": "TS for Talend",
-    "description": "Token exporter in TS",
+    "description": "TS token and dictionnary exporter",
     "author": "Talend and Ivan Terpugov & Jiri Trecak",
     "organization": "Talend",
     "source_dir": "src",
-    "version": "1.1",
+    "homepage": "https://design.talend.com",
+    "version": "1.2",
+    "usesBrands": true,
     "config": {
         "sources": "sources.json",
         "output": "output.json",
