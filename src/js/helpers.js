@@ -188,5 +188,5 @@ Pulsar.registerFunction("baseWrap", function (token, designSystemName) {
 });
 
 Pulsar.registerFunction("getFigmaKey", function (token) {
-  return token?.origin?.id || token.id;
+  return token.origin ? token.origin.id : token.id;
 });
