@@ -186,3 +186,7 @@ Pulsar.registerFunction("baseWrap", function (token, designSystemName) {
 
   return token;
 });
+
+Pulsar.registerFunction("getFigmaKey", function (token) {
+  return token?.origin?.id || token.id;
+});
